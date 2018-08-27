@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="each_note_title">標題</string>
+    <string name="delete">刪除</string>
+    <string name="each_note_content">你在想甚麼?</string>
+</resources>

@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_each_note"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:background="#ffb94c"
+    tools:context="com.example.wei_tung.mynotebook.EachNote">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/rectangle"
+        android:layout_below="@+id/note_title"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="10dp">
+
+        <EditText
+            android:hint="@string/each_note_content"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="30dp"
+            android:layout_marginEnd="25dp"
+            android:layout_marginTop="21dp"
+            android:id="@+id/note_content"
+            android:textSize="25sp"
+            android:background="@android:color/transparent"/>
+    </ScrollView>
+
+    <Button
+        android:text="@string/delete"
+        android:layout_width="70dp"
+        android:layout_height="30dp"
+        android:id="@+id/delete_button"
+        android:textColor="#ffffff"
+        android:textStyle="bold"
+        android:textSize="15sp"
+        android:layout_marginTop="13dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:background="@drawable/rectangle_button"/>
+
+    <EditText
+        android:hint="@string/each_note_title"
+        android:layout_toLeftOf="@id/delete_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/note_title"
+        android:textSize="45sp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="15dp"
+        android:background="@android:color/transparent"
+        tools:ignore="RtlHardcoded"/>
+
+</RelativeLayout>
